@@ -1,0 +1,9 @@
+<h1> Enter your book details </h1>
+<%= simple_form_for @book do |b| %>
+  <%= b.input :title %>
+  <%= b.input :genre %>
+  <%= b.input :classification %>
+  <%= b.input :book_type %>
+  <%= b.input :year %>
+   <%= b.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
